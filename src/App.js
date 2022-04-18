@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Contador from "./Ejercicios/Contador/Contador"
+import Greetings from "./Ejercicios/Grettings"
+import Estados from "./Ejercicios/Estados/Estados"
+import Click from "./Ejercicios/Estados/Click"
+import LLamada from "./Ejercicios/Evento/LLmada "
+import Evento from "./Ejercicios/Evento/Evento"
+import Controladores from "./Ejercicios/Evento/Controladores"
 
-function App() {
+const App = () => {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Greetings/>
+      <Contador/>
+     <Estados/>
+     <Click/>
+    <Evento/>
+    <LLamada/>
+    <Controladores/>
     </div>
-  );
+  )
 }
-
-export default App;
+export default App
